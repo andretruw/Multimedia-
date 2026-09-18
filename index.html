@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Salsamentaria Sofi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Salsamentaria Sofi</h1>
+        <p>Conoce nuestro espacio y nuestros productos</p>
+    </header>
+
+    <main>
+
+        <!-- IMÁGENES -->
+        <section class="multimedia">
+
+            <h2>📸 Nuestra Salsamentaria</h2>
+
+            <div class="galeria">
+
+                <img src="salsamentaria1.jpg"
+                     alt="Interior de la Salsamentaria Sofi"
+                     loading="lazy">
+
+                <img src="salsamentaria2.jpg"
+                     alt="Productos de la Salsamentaria Sofi"
+                     loading="lazy">
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEOS -->
+        <section class="multimedia">
+
+            <h2>🎥 Conoce nuestra salsamentaria</h2>
+
+            <div class="videos">
+
+                <video controls poster="salsamentaria1.jpg">
+
+                    <source src="video1.mp4" type="video/mp4">
+
+                    Tu navegador no soporta este video.
+
+                </video>
+
+
+                <video controls poster="salsamentaria2.jpg">
+
+                    <source src="video2.mp4" type="video/mp4">
+
+                    Tu navegador no soporta este video.
+
+                </video>
+
+            </div>
+
+        </section>
+
+
+        <!-- AUDIO -->
+        <section class="musica">
+
+            <h2>🎵 Música de fondo</h2>
+
+            <p>
+                Presiona el botón para reproducir o pausar
+                la música.
+            </p>
+
+            <audio id="musicaFondo"
+                   src="musica_relajante.wav"
+                   loop>
+            </audio>
+
+            <button id="botonMusica">
+                ▶️ Reproducir música
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Salsamentaria Sofi</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

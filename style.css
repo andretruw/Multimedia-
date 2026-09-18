@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background: #f3d2a2;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
+
+header p {
+    margin: 0;
+    font-size: 18px;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+.multimedia,
+.musica {
+    margin: 35px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.musica {
+    text-align: center;
+}
+
+#botonMusica {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background: #8b4513;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#botonMusica:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    background: #f3d2a2;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .galeria,
+    .videos {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: auto;
+    }
+
+    .multimedia,
+    .musica {
+        padding: 18px;
+    }
+}
